@@ -1,0 +1,47 @@
+#tittle h1{
+    color:hsl(109, 56%, 43%) ;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+#color{
+    background: url('https://i.pinimg.com/564x/37/76/74/377674040fc5c904a9b53f3bb7bf66d4.jpg') ;
+    /* background-size: cover; */
+    /* background-position: center; */
+    width: 420px;
+    background-color: rgba(0, 204, 255, 0.997);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+#body{ 
+    color: rgb(73, 79, 161);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+
+#welcome{
+    color: rgb(73, 79, 161);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+
+}
+
+#remember{
+    /* display: flex; */
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+
+/* #remember label input{ 
+    accent-color: yellow;
+    margin-right: 4px;
+} */

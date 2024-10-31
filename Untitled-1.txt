@@ -1,0 +1,115 @@
+def proceso():
+        Peso = int(input("Ingrese su peso en kilos: "))
+        altura_input = input("Ingrese su altura en metros (por ejemplo, 1.70): ")
+        Altura = float(altura_input)
+
+        # Calcular el IMC
+        IMC = Peso / (Altura ** 2)
+
+        if IMC < 18.5:
+            print("Usted necesita una etapa de aumento de peso.")
+            DietaVolumen()
+        elif IMC > 24.9:
+            print("Usted necesita una etapa de déficit calórico.")
+            DietaDeficitCalorico()
+        else:
+            print("Su peso es ideal según la altura ingresada.")
+
+
+
+
+
+def DietaVolumen(): # Changed 'Def' to 'def' and added colon
+    print("4 huevos y una arepa desayuno")
+    print("1 batido de proteina por la mañana y banano")
+    print("Protenia de su elección, ej: 150 gr de pescado, 150 gr de cardes de res, 150 gr de pechuga de pollo o 150 gr de pechuga de cerdo, 150 gr de arroz y aguacate al almuerzo")
+    print("100 gr de pasta por la tarde")
+    print("Protenia de su elección, ej: 150 gr de pescado, 150 gr de cardes de res, 150 gr de pechuga de pollo o 150 gr de pechuga de cerdo y aguacate en la cena")
+
+def DietaDeficitCalorico(): # Changed 'Def' to 'def', added colon and indented function body
+    print("4 huevos desayuno")
+    print(" 1 batido de proteina por la mañana")
+    print("Protenia de su elección, ej: 150 gr de pescado, 150 gr de cardes de res, 150 gr de pechuga de pollo o 150 gr de pechuga de cerdo y ensalada al almuerzo")
+    print("yogurt griego por la tarde")
+    print("Protenia de su elección, ej: 150 gr de pescado, 150 gr de cardes de res, 150 gr de pechuga de pollo o 150 gr de pechuga de cerdo y aguacate en la cena")
+
+def Rutinas():
+    print("rutinas de ejercisio")
+    print("1.pecho 2.bicep 3. tricep 4.espalda 5.hombro 6.abdomen 7.cardio")
+    User= ((input("ingrese el numero de la rutina que desea, si quiere dos rutinas o mas separe los numeros por espacios: "))) # Removed extra indentation
+    opciones = User.split()
+    for opcion in opciones: # Iterates through the list of options
+            opcion = int(opcion) # Tries to convert each option to an integer
+            if opcion==1:
+                Pecho()
+            elif opcion==2:
+                Bicep()
+            elif opcion==3:
+                tricep()
+            elif opcion==4:
+                Espalda()
+            elif opcion==5:
+                Hombro()
+            elif  opcion==6:
+                Abdomen()
+            elif opcion==7:
+                Cardio()
+            else : # Handles the case where the input is not a valid integer
+              print(f"Opción inválida: {opcion}")
+
+
+
+def Pecho():
+    print("bienvenido a la rutina de pecho")
+    print("4x12 series de press banca")
+    print("4x12 series de press inclinado")
+    print("4x12 series de press declinado")
+    print("4x12 series de apertura")
+    print("4 series al fallo de lagartijas")
+
+
+def Espalda():
+    print("bienvenido a la rutina de espalda")
+    print("4x12 series de barras")
+    print("4 series al fallo de jalon con mancuerna")
+    print("4x10 series por mano de remomancuerna unilateral")
+    print("4x10 series de remo con barra")
+    print("4x15 series de jalon con polea")
+
+
+def Bicep():
+    print("bienvenido a la rutina de biceps")
+    print("4x12 series de curl de bicep con mancuerna")
+    print("4x12 series de curl de bicep con barra")
+    print("4x12 series de martillo con mancuerna")
+    print("4x12 series de curl de bicep con repeticiones negativas")
+    print("4x12 series de curl de bicep con polea")
+
+def tricep():
+    print("bienvenido a la rutina de triceps")
+    print("4x15 series de fondos")
+    print("4x10 series de press frances")
+    print("4 series al fallo de extensión con polea")
+    print("4 series al fallo de extensión con barra")
+    print("4x10 series de patada de triceps con mancuerna")
+
+def Hombro():
+  print("bienvenido a la rutina de hombro")
+  print("4x15 series de elevaciones laterales")
+  print("4x15 series de elevaciones frontales")
+  print("4x10 series de press militar")
+  print("4x10 series de elevaciones posteriores con mancuerna")
+
+def Abdomen():
+  print("bienvenido a la rutina de abdomen")
+  print("4x12 series de abdomen con rueda")
+  print("4x12 series de abdominales de bicicleta")
+  print("4x10 series de tijeras verticales")
+
+def Cardio():
+  print("bienvenido a la rutina de cardio")
+  print("trote 20 minutos en la caminadora")
+  print("4x10 series de burpees")
+
+proceso()
+Rutinas()
